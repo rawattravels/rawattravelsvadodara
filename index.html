@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rawat Travels | Vadodara</title>
+
+<style>
+body {
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    background:#f5f7fa;
+}
+
+/* HEADER */
+header {
+    position:sticky;
+    top:0;
+    background:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:10px 20px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    z-index:1000;
+}
+.logo { font-weight:bold; font-size:18px; }
+.nav a { margin:0 10px; text-decoration:none; color:#333; }
+
+.whatsapp-btn {
+    background:#25D366;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero {
+    background:url('https://source.unsplash.com/1600x700/?travel,road') center/cover;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+.hero h1 { font-size:30px; margin-bottom:10px; }
+.hero p { margin-bottom:20px; }
+
+.btn {
+    display:inline-block;
+    padding:12px 20px;
+    border-radius:30px;
+    text-decoration:none;
+    margin:5px;
+    font-weight:bold;
+}
+.primary { background:#25D366; color:white; }
+.secondary { background:white; color:#333; }
+
+/* SECTION */
+section { padding:30px 15px; text-align:center; }
+h2 { margin-bottom:20px; }
+
+/* CARDS */
+.container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.card {
+    background:white;
+    width:280px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+.card:hover { transform:translateY(-5px); }
+
+.card img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content { padding:15px; }
+
+/* LIST */
+.list { max-width:400px; margin:auto; text-align:left; }
+
+/* CTA */
+.cta {
+    background:linear-gradient(135deg,#0a6cff,#00c6ff);
+    color:white;
+    padding:40px 20px;
+}
+
+/* FOOTER */
+footer {
+    background:#0a6cff;
+    color:white;
+    padding:15px;
+}
+
+/* FLOAT BUTTON */
+.float {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
+}
+
+/* MOBILE */
+@media(max-width:600px){
+    .hero h1 { font-size:22px; }
+    .card { width:90%; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">Rawat Travels</div>
+    <div class="nav">
+        <a href="#">Home</a>
+        <a href="#">Trips</a>
+        <a href="#">Cab</a>
+        <a href="#">Contact</a>
+    </div>
+    <a class="whatsapp-btn" href="https://wa.me/91XXXXXXXXXX">WhatsApp</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Explore Gujarat & India</h1>
+    <p>Cab & Tour Packages from Vadodara</p>
+    <a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Hi I want best travel deal">📲 Get Best Price</a>
+    <a class="btn secondary" href="#destinations">View Trips</a>
+</section>
+
+<!-- DESTINATIONS -->
+<section id="destinations">
+<h2>Popular Trips from Vadodara</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://source.unsplash.com/400x250/?temple,india">
+<div class="card-content">
+<h3>Poicha</h3>
+<p>1 Day Trip</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Poicha trip">Get Price</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x250/?statue">
+<div class="card-content">
+<h3>Statue of Unity</h3>
+<p>1-2 Day Trip</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Statue of Unity trip">Get Price</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x250/?mountain,temple">
+<div class="card-content">
+<h3>Pavagadh</h3>
+<p>1 Day Trip</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Pavagadh trip">Get Price</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x250/?river,temple">
+<div class="card-content">
+<h3>Kuber Bhandari</h3>
+<p>1 Day Trip</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Kuber Bhandari trip">Get Price</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CAB SERVICES -->
+<section>
+<h2>Cab Services</h2>
+
+<div class="list">
+<p>🚗 Vadodara → Ahmedabad Airport</p>
+<p>🚗 Vadodara → Statue of Unity</p>
+<p>🚗 Vadodara → Poicha</p>
+<p>🚗 Vadodara → Surat</p>
+</div>
+
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Need cab service">Book Cab</a>
+</section>
+
+<!-- PACKAGES -->
+<section>
+<h2>Tour Packages</h2>
+
+<div class="container">
+
+<div class="card">
+<img src="https://source.unsplash.com/400x250/?beach">
+<div class="card-content">
+<h3>Goa</h3>
+<p>3N/4D</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Goa package">Book</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x250/?snow,mountain">
+<div class="card-content">
+<h3>Manali</h3>
+<p>5N/6D</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Manali package">Book</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://source.unsplash.com/400x250/?dubai">
+<div class="card-content">
+<h3>Dubai</h3>
+<p>4N/5D</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=Dubai package">Book</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- WHY US -->
+<section>
+<h2>Why Choose Rawat Travels?</h2>
+<p>✔ Best Price Guarantee</p>
+<p>✔ Local Vadodara Service</p>
+<p>✔ Trusted by Families</p>
+<p>✔ Easy WhatsApp Booking</p>
+</section>
+
+<!-- REVIEWS -->
+<section>
+<h2>Customer Reviews</h2>
+<p>⭐ “Great Poicha trip experience” – Rahul</p>
+<p>⭐ “On-time airport cab service” – Neha</p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Ready to Plan Your Trip?</h2>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX?text=I want best travel deal">📲 Get Instant Price</a>
+</section>
+
+<!-- CONTACT -->
+<section>
+<h2>Contact</h2>
+<p>📍 Vadodara, Gujarat</p>
+<a class="btn primary" href="https://wa.me/91XXXXXXXXXX">Chat on WhatsApp</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+<p>© 2026 Rawat Travels</p>
+</footer>
+
+<!-- FLOAT BUTTON -->
+<a class="float" href="https://wa.me/91XXXXXXXXXX">💬</a>
+
+</body>
+</html>
