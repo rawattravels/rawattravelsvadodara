@@ -24,7 +24,16 @@ header {
     box-shadow:0 2px 10px rgba(0,0,0,0.1);
     z-index:1000;
 }
-.logo { font-weight:bold; font-size:18px; }
+.logo {
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:bold;
+}
+
+.logo img {
+    height:40px;
+}
 .nav a { margin:0 10px; text-decoration:none; color:#333; }
 
 .whatsapp-btn {
@@ -149,7 +158,10 @@ footer {
 
 <!-- HEADER -->
 <header>
-    <div class="logo">Rawat Travels</div>
+    <div class="logo">
+    <img src="images/rawattravelslogo.jpeg" alt="Rawat Travels Logo">
+    <span>Rawat Travels</span>
+</div>
     <div class="nav">
         <a href="#">Home</a>
         <a href="#destinations">Trips</a>
